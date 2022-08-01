@@ -35,6 +35,24 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new tag
+  Tag.create(req.body)
+    .then((tag) => {
+      if (req.body.productIds.length) {
+        const productIdMap = req.body.productIds.map((product_id) => {
+          return {
+            tag_id: tag.id,
+            product_id,
+          };
+        });
+        return ProductTag.bulkCreate(productIdMap);
+      }
+      res.status(200).json(tag);
+    })
+    .then((tagID) => res.status(200).json(tagID))
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json(err);
+    });
 });
 
 router.put('/:id', (req, res) => {
