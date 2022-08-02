@@ -52,7 +52,7 @@ Tags:
 
 ![tags-preview](./images/Tags-Preview.png)
 
-Walkthrough video: [Here](https://drive.google.com/file/d/18u0pT_7ycUpuXZkwjuFpnK0Q2TfPa_bo/view?usp=sharing)
+Walkthrough video: [Here](https://drive.google.com/file/d/1grnQ94R8WtGtPh0cSNyr2pGuTnI4PG0_/view?usp=sharing)
 
 ## Credits
 This application was built with the support of the resources and staff of the UCB Full Stack Full Time Coding Bootcamp Summer 2022. 
